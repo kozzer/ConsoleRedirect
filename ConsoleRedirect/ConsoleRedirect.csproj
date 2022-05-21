@@ -12,6 +12,7 @@
     <SignAssembly>False</SignAssembly>
     <PackageId>KozzerTools.$(AssemblyName)</PackageId>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<PackageReadmeFile>readme.md</PackageReadmeFile>
 	<Authors>Kozzer</Authors>
 	<NeutralLanguage>en-US</NeutralLanguage>
 	<PackageTags>Console</PackageTags>
@@ -25,9 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="README.md">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+	<None Include="README.md" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
 </Project>
