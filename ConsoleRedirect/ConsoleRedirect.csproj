@@ -2,6 +2,22 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Company>WebKozzer</Company>
+    <Description>Redirect Console text to an Event Handler.  Also supports passing objects, via Json serialization.</Description>
+    <Copyright>© 2022 David Kozlowski</Copyright>
+    <PackageProjectUrl>https://github.com/kozzer/ConsoleRedirect</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/kozzer/ConsoleRedirect</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <SignAssembly>False</SignAssembly>
+    <PackageId>KozzerTools.$(AssemblyName)</PackageId>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<Authors>Kozzer</Authors>
+	<NeutralLanguage>en-US</NeutralLanguage>
+	<PackageTags>Console</PackageTags>
+	<AssemblyVersion>1.0.1.0</AssemblyVersion>
+	<FileVersion>1.0.1.0</FileVersion>
+	<Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
