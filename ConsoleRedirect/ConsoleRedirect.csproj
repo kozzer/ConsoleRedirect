@@ -12,13 +12,14 @@
     <SignAssembly>False</SignAssembly>
     <PackageId>KozzerTools.$(AssemblyName)</PackageId>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
-	<PackageReadmeFile>readme.md</PackageReadmeFile>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
 	<Authors>Kozzer</Authors>
 	<NeutralLanguage>en-US</NeutralLanguage>
 	<PackageTags>Console</PackageTags>
-	<AssemblyVersion>1.0.1.0</AssemblyVersion>
-	<FileVersion>1.0.1.0</FileVersion>
-	<Version>1.0.1</Version>
+	<AssemblyVersion>1.0.0.3</AssemblyVersion>
+	<FileVersion>1.0.0.3</FileVersion>
+	<Version>1.0.3</Version>
+	<PackageIcon>kozzer.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,7 +27,20 @@
   </ItemGroup>
 
   <ItemGroup>
-	<None Include="README.md" Pack="true" PackagePath="\"/>
+	<None Include="bin\Release\netstandard2.0\README.md">
+	  <Pack>True</Pack>
+	  <PackagePath>\</PackagePath>
+	</None>
+	<None Include="README.md" Pack="true" PackagePath="\">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="kozzer.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
