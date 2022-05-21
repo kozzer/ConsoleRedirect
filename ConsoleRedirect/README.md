@@ -24,12 +24,13 @@
       private void redirectEventHandler(object sender, ConsoleRedirectEventArgs e)
       {
           DateTime theDateTimeObject = e.GetValueAs<DateTime>();
-          showNotification("From the Console", theDateTimeObject.ToString("dddd, MMMM d, yyyy"));   // Saturday, May 21, 2022
+          showNotification("From the Console", theDateTimeObject.ToString("dddd, MMMM d, yyyy"));   
       }
   
 * `ConsoleRedirect` class has a static method `WriteObject<T>()`, which serializes an object into Json and passes the string to System.Console.WriteLine() to be retrieved by your event handler as described above:
 
-      ConsoleRedirect.WriteObject<WidgetManifest>(manifest);   // Serializes manifest to Json, then calls Console.WriteLine()
+      // Serialize manifest to Json, then call Console.WriteLine()
+      ConsoleRedirect.WriteObject<WidgetManifest>(manifest);   
   
 * You can add more event handlers by calling the `ConsoleRedirect.AddEventHandler()` method, which accepts an action with the same method signature as what the constructor accepts:
 
