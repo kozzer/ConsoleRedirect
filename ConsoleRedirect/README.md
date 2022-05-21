@@ -17,7 +17,7 @@ The static method `ConsoleRedirect.WriteObject<T>()` uses System.Console.WriteLi
     the Event Handler passed into the Constructor. Also contains a static method to serialize an 
     object to Json, then passing the resulting string to Console.WriteLine().
 
-   #### `ConsoleRedirectEventArgs`
+  #### `ConsoleRedirectEventArgs`
     Contains the Console text in the Value property.  If receiving an object that's been 
     serialized to Json, use the GetValueAs<T>() method to retrieve as an instance of T.
 
