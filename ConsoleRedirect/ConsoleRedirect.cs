@@ -57,11 +57,7 @@ namespace KozzerTools
         private void reportToEventHandler(ConsoleRedirectEventArgs e)
         {
             // If not handled yet, go ahead and pass string to the EventHandler, then set the flag
-            if (!e.Handled)
-            {
-                ((IProgress<ConsoleRedirectEventArgs>)consoleReporter).Report(e);
-                e.Handled = true;
-            }
+            ((IProgress<ConsoleRedirectEventArgs>)consoleReporter).Report(e);
         }
 
         #endregion

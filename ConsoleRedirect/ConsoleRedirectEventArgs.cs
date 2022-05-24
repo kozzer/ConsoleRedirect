@@ -15,11 +15,6 @@ namespace KozzerTools
         public string Value { get; private set; }
 
         /// <summary>
-        /// Flag indicating whether Event has been handled so all subsquent handlers can ignore
-        /// </summary>
-        public bool Handled { get; set; } = false;
-
-        /// <summary>
         /// Constructor -- at least 1 EventHandler required 
         /// </summary>
         /// <param name="value">String value to pass from Console to EventHandler</param>
